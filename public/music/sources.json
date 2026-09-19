@@ -1,0 +1,34 @@
+[
+  {
+    "bytes": 6252608,
+    "file": "welcome-to-los-santos.mp3",
+    "url": "https://musify.club/track/oh-no-welcome-to-los-santos-10378777",
+    "title": "Welcome to Los Santos",
+    "sha256": "5a4ee884b5775be1ed4f00fd3465b3d5ca448ab0074d6df44ebdf4a043fc39bd",
+    "artist": "Oh No"
+  },
+  {
+    "bytes": 9874463,
+    "file": "self-control.mp3",
+    "url": "https://musify.club/en/track/laura-branigan-self-control-616617",
+    "title": "Self Control",
+    "sha256": "dd88bf15e5b262b2b42765237e6f64ebd2e7718830e2525dcf9db6987e04db60",
+    "artist": "Laura Branigan"
+  },
+  {
+    "bytes": 9339298,
+    "file": "out-of-touch.mp3",
+    "url": "https://musify.club/en/track/daryl-hall-and-john-oates-out-of-touch-293642",
+    "title": "Out of Touch",
+    "sha256": "7fa35c93ac2d5599660a67604558d9d561db690d54c86e7c1adef1dbf47866c4",
+    "artist": "Daryl Hall & John Oates"
+  },
+  {
+    "bytes": 10401041,
+    "file": "it-was-a-good-day.mp3",
+    "url": "https://musify.club/en/track/ice-cube-it-was-a-good-day-10567151",
+    "title": "It Was a Good Day",
+    "sha256": "d4b55c836e6cf407954e0130d8e2d09fdff25936c0eb0bf6d753f147cb7b71c7",
+    "artist": "Ice Cube"
+  }
+]

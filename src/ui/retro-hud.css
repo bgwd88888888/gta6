@@ -1,0 +1,111 @@
+/* Local fonts and inline SVG keep the retro overlay independent of network assets. */
+.topbar .location { position: absolute; left: 50%; transform: translateX(-50%); }
+.retro-hud {
+  position: fixed;
+  top: 28px;
+  right: 34px;
+  display: grid;
+  grid-template-columns: max-content 66px;
+  column-gap: 12px;
+  row-gap: 3px;
+  color: #f2edb5;
+  font-family: Impact, 'Arial Narrow', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.04;
+  filter: drop-shadow(1px 3px 0 #11172580);
+}
+.retro-stats { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.hud-clock, .hud-cash, .hud-vitals b {
+  -webkit-text-stroke: 3px #172035;
+  paint-order: stroke fill;
+  text-shadow: 2px 2px 0 #101725;
+  letter-spacing: 1.2px;
+}
+.hud-clock { color: #74eafa; font-size: 29px; }
+.hud-cash { color: #49ea9b; font-size: 29px; font-weight: 900; }
+.hud-vitals { display: flex; align-items: center; gap: 9px; font-size: 26px; }
+.hud-vitals > span { display: flex; align-items: center; gap: 4px; }
+.hud-vitals svg { width: 21px; height: 23px; fill: currentColor; stroke: #172035; stroke-width: 2; paint-order: stroke fill; overflow: visible; }
+.hud-vitals b { font-weight: 900; }
+.hud-armor { color: #e6f9fd; }
+.hud-health { color: #f59adc; }
+.hud-weapon {
+  align-self: center;
+  width: 66px;
+  height: 76px;
+  border: 3px solid #eda4ed;
+  border-radius: 14px 11px 16px 10px;
+  background: #151e2ce6;
+  box-shadow: 0 0 0 2px #16202c, inset 0 0 0 2px #758e99;
+  overflow: hidden;
+}
+.hud-weapon svg { width: 100%; height: 100%; }
+.fist-hand { fill: #7debed; stroke: #15222f; stroke-width: 2; stroke-linejoin: round; }
+.fist-cuff { fill: #ea83da; stroke: #14202d; stroke-width: 2; }
+.fist-detail { fill: none; stroke: #30838f; stroke-width: 1.8; stroke-linecap: round; }
+.hud-wanted { display: flex; justify-content: flex-end; gap: 2px; padding-top: 2px; }
+.hud-wanted svg { width: 24px; height: 24px; fill: #233343a6; stroke: #dfd99a; stroke-width: 1.5; filter: drop-shadow(1px 1px 0 #111827); }
+.hud-pause {
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  padding: 4px;
+  background: transparent;
+  color: #e4e7d8;
+  font: 13px 'Segoe UI', sans-serif;
+  text-shadow: 1px 1px #101725;
+}
+.hud-pause small { font-size: 9px; letter-spacing: 1px; }
+.hud-pause:hover { color: #f6a3e0; }
+.map-panel {
+  left: 38px;
+  bottom: 25px;
+  width: clamp(150px, 14vw, 200px);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  pointer-events: none;
+}
+.radar-bezel {
+  aspect-ratio: 1;
+  border: 5px solid #17202a;
+  padding: 2px;
+  border-radius: 50%;
+  background: #faf0e3;
+  box-shadow: 0 0 0 2px #f6b0db, 0 0 0 4px #1b2030, 3px 6px 0 #101a2755;
+  overflow: hidden;
+}
+#minimap { display: block; width: 100%; height: 100%; border-radius: 50%; background: #19242a; }
+.radar-location {
+  text-align: center;
+  margin-top: 11px;
+  color: #f6b2db;
+  font: italic 700 18px Georgia, serif;
+  letter-spacing: .5px;
+  -webkit-text-stroke: 3px #17212d;
+  paint-order: stroke fill;
+  text-shadow: 1px 2px 0 #17212d;
+}
+@media (max-width: 1000px) {
+  .retro-hud { right: 24px; top: 24px; grid-template-columns: max-content 57px; gap: 3px 9px; }
+  .hud-clock, .hud-cash { font-size: 25px; }
+  .hud-vitals { font-size: 23px; }
+  .hud-weapon { width: 57px; height: 67px; }
+  .hud-wanted svg { width: 22px; height: 22px; }
+  .map-panel { left: 28px; bottom: 24px; }
+}
+@media (max-width: 700px) {
+  .retro-hud { right: 18px; top: 20px; grid-template-columns: max-content 44px; gap: 2px 7px; }
+  .hud-clock, .hud-cash { font-size: 20px; letter-spacing: .8px; }
+  .hud-vitals { font-size: 18px; gap: 6px; }
+  .hud-vitals svg { width: 15px; height: 17px; }
+  .hud-weapon { width: 44px; height: 54px; border-radius: 10px; }
+  .hud-wanted svg { width: 17px; height: 17px; }
+  .map-panel { left: 22px; bottom: 18px; width: 136px; }
+  .radar-location { font-size: 15px; margin-top: 9px; }
+}
